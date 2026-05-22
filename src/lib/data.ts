@@ -1,0 +1,165 @@
+import type { MetricCard, Transaction, ChartDataPoint, ActivityItem } from '@/types';
+
+export const metrics: MetricCard[] = [
+  {
+    id: '1',
+    title: 'Total Revenue',
+    value: '$84,254',
+    change: 12.5,
+    changeLabel: 'vs last month',
+    icon: 'DollarSign',
+    color: 'brand',
+  },
+  {
+    id: '2',
+    title: 'Active Users',
+    value: '24,563',
+    change: 8.2,
+    changeLabel: 'vs last month',
+    icon: 'Users',
+    color: 'violet',
+  },
+  {
+    id: '3',
+    title: 'New Orders',
+    value: '3,847',
+    change: -2.4,
+    changeLabel: 'vs last month',
+    icon: 'ShoppingCart',
+    color: 'amber',
+  },
+  {
+    id: '4',
+    title: 'Conversion Rate',
+    value: '3.24%',
+    change: 1.1,
+    changeLabel: 'vs last month',
+    icon: 'TrendingUp',
+    color: 'emerald',
+  },
+];
+
+export const chartData: ChartDataPoint[] = [
+  { month: 'Jan', revenue: 42000, expenses: 28000, profit: 14000 },
+  { month: 'Feb', revenue: 55000, expenses: 32000, profit: 23000 },
+  { month: 'Mar', revenue: 48000, expenses: 30000, profit: 18000 },
+  { month: 'Apr', revenue: 61000, expenses: 35000, profit: 26000 },
+  { month: 'May', revenue: 57000, expenses: 33000, profit: 24000 },
+  { month: 'Jun', revenue: 72000, expenses: 38000, profit: 34000 },
+  { month: 'Jul', revenue: 68000, expenses: 36000, profit: 32000 },
+  { month: 'Aug', revenue: 79000, expenses: 41000, profit: 38000 },
+  { month: 'Sep', revenue: 84000, expenses: 43000, profit: 41000 },
+  { month: 'Oct', revenue: 76000, expenses: 39000, profit: 37000 },
+  { month: 'Nov', revenue: 91000, expenses: 46000, profit: 45000 },
+  { month: 'Dec', revenue: 98000, expenses: 50000, profit: 48000 },
+];
+
+export const transactions: Transaction[] = [
+  {
+    id: '1',
+    name: 'Alice Johnson',
+    email: 'alice@example.com',
+    amount: 1200.0,
+    status: 'completed',
+    date: '2024-12-10',
+    avatar: 'AJ',
+  },
+  {
+    id: '2',
+    name: 'Bob Martinez',
+    email: 'bob@example.com',
+    amount: 850.5,
+    status: 'pending',
+    date: '2024-12-10',
+    avatar: 'BM',
+  },
+  {
+    id: '3',
+    name: 'Carol White',
+    email: 'carol@example.com',
+    amount: 3400.0,
+    status: 'completed',
+    date: '2024-12-09',
+    avatar: 'CW',
+  },
+  {
+    id: '4',
+    name: 'David Lee',
+    email: 'david@example.com',
+    amount: 220.75,
+    status: 'failed',
+    date: '2024-12-09',
+    avatar: 'DL',
+  },
+  {
+    id: '5',
+    name: 'Emma Davis',
+    email: 'emma@example.com',
+    amount: 5100.0,
+    status: 'completed',
+    date: '2024-12-08',
+    avatar: 'ED',
+  },
+  {
+    id: '6',
+    name: 'Frank Wilson',
+    email: 'frank@example.com',
+    amount: 680.0,
+    status: 'pending',
+    date: '2024-12-08',
+    avatar: 'FW',
+  },
+];
+
+export const activityFeed: ActivityItem[] = [
+  {
+    id: '1',
+    user: 'Alice Johnson',
+    action: 'completed a purchase of $1,200',
+    time: '2 minutes ago',
+    type: 'success',
+  },
+  {
+    id: '2',
+    user: 'System',
+    action: 'Daily backup completed successfully',
+    time: '15 minutes ago',
+    type: 'info',
+  },
+  {
+    id: '3',
+    user: 'David Lee',
+    action: 'payment failed — card declined',
+    time: '1 hour ago',
+    type: 'error',
+  },
+  {
+    id: '4',
+    user: 'Bob Martinez',
+    action: 'order is awaiting confirmation',
+    time: '2 hours ago',
+    type: 'warning',
+  },
+  {
+    id: '5',
+    user: 'Emma Davis',
+    action: 'upgraded to Pro plan',
+    time: '3 hours ago',
+    type: 'success',
+  },
+  {
+    id: '6',
+    user: 'Admin',
+    action: 'new product category added',
+    time: '5 hours ago',
+    type: 'info',
+  },
+];
+
+export const topProducts = [
+  { name: 'Pro Subscription', revenue: 34200, units: 285, growth: 18.2 },
+  { name: 'Enterprise Plan', revenue: 28900, units: 82, growth: 24.5 },
+  { name: 'Starter Pack', revenue: 12400, units: 620, growth: -3.1 },
+  { name: 'Add-on Bundle', revenue: 8700, units: 174, growth: 9.8 },
+  { name: 'One-time License', revenue: 5300, units: 53, growth: 6.3 },
+];
